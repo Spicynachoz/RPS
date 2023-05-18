@@ -1,3 +1,19 @@
+//select all elements
+const rockButton = document.querySelector('.rock');
+const paperButton = document.querySelector('.paper');
+const scissorsButton = document.querySelector('.scissors');
+
+
+rockButton.addEventListener('click',() =>{
+
+    const computerSelection = getComputerChoice()
+    const playerSelection = 'rock';
+    playRound(playerSelection,computerSelection)
+} )
+
+
+
+
 let playerScore = 0;
 let computerScore = 0;
 //Array of possible choices
@@ -66,14 +82,12 @@ function playRound(playerSelection,computerSelection){
 
     }
     
-    
 
 
 }
 
 
-
-getComputerChoice();
-console.log(playerSelection + " " + computerSelection);
-playRound(playerSelection,computerSelection);
-console.log ("Player Score : "+ playerScore + " " + "Computer Score : " + computerScore);
+//getComputerChoice();
+//console.log(playerSelection + " " + computerSelection);
+//playRound(playerSelection,computerSelection);
+//console.log ("Player Score : "+ playerScore + " " + "Computer Score : " + computerScore);
